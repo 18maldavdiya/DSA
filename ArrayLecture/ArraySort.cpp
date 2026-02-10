@@ -13,6 +13,5 @@ int main(){
             cout<<i+1<<endl;
         }
     }
-    cout<<"not found";
 
 }
