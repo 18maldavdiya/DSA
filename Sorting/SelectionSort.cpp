@@ -7,10 +7,16 @@ int main(){
     for(int i=0;i<n;i++){
         cin>>arr[i];
     }
-        for(int j=i+1;j<n;j++){
-            int main =i;
+        for(int i=0;i<n-1;i++){
+            int SI =i;
             for(int j=i+1;j<n;j++){
-
+                if(arr[j]<arr[SI]){
+                    SI = j;
+                }
             }
+            swap(arr[i],arr[SI]);
+        }
+        for(int i =0;i<n;i++){
+            cout<<arr[i]<<" ";
         }
 }
