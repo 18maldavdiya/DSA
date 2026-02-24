@@ -1,23 +1,32 @@
 #include<iostream>
+#include<vector>
 using namespace std;
+
 int main(){
     int n;
-    cin>>n;
-    int total =0;
-    int arr[n];
-    for(int i =1;i<n;i++){
-        cout<<arr[i];
-    }
-    for(int i =0;i<arr.size();i++){
-        total+=arr[i];
-    }
-    int leftsum =0;
-    for(int i =0;i<arr[n].size();i++){
-        int rightsum =total-leftsum-arr[i];
-        if(leftsum==rightsum){
-            return i;
-        }
-    }
-    leftsum+=nums[i];
+    cin >> n;
 
+    vector<int> arr(n);
+    int total = 0;
+
+    // Input
+    for(int i = 0; i < n; i++){
+        cin >> arr[i];
+        total += arr[i];
+    }
+
+    int leftsum = 0;
+
+    for(int i = 0; i < n; i++){
+        int rightsum = total - leftsum - arr[i];
+
+        if(leftsum == rightsum){
+            cout << "Pivot Index: " << i;
+            return 0;
+        }
+
+        leftsum += arr[i];
+    }
+
+    cout << "-1";  // If no pivot found
 }
