@@ -1,27 +1,34 @@
 #include<iostream>
 using namespace std;
+
 int main() {
-	int M,N;
+    int m, n;
+    cin >> m >> n;
+
     int arr[10][10];
-    cin>>M>>N;
-	for(int i = 0;i<=M; i++){
-		for(int j = 0;j<=M;j++){
-			cout<<arr[i][j];
-		}
-	}
-	int left = 0;
-	int top = 0;
-	int bottom =M-1;
-	int right = N-1;
-	while(left !=n){
-		for(int i = top; i <= bottom; i++){
-            cout << arr[i][left] << ", ";
+
+    for(int i = 0; i < m; i++){
+        for(int j = 0; j < n; j++){
+            cin >> arr[i][j];
         }
-        left++;
-		for(int i =bottom ; i>=top ; i--){
-			cout<<[i][left]<< ", ";
-		}
-		left++;
-	}
-	return 0;
+    }
+
+    for(int j = 0; j < n; j++){
+        
+        if(j % 2 == 0){   // top to bottom
+            for(int i = 0; i < m; i++){
+                cout << arr[i][j] << ", ";
+            }
+        }
+        else{            
+            for(int i = m-1; i >= 0; i--){
+                cout << arr[i][j] << ", ";
+            }
+        }
+
+    }
+
+    cout << "END";
+
+    return 0;
 }
