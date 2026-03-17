@@ -15,7 +15,7 @@ int main() {
 
     for(int j = 0; j < n; j++){
         
-        if(j % 2 == 0){   // top to bottom
+        if(j % 2 == 0){   
             for(int i = 0; i < m; i++){
                 cout << arr[i][j] << ", ";
             }
