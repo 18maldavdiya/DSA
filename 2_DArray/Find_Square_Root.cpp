@@ -7,6 +7,7 @@ int squareRoot(int A) {
             return i;
         }
     }
+    return -1;
         
 }
 int main () {
