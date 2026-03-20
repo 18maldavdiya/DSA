@@ -7,5 +7,5 @@ int main(){
         int dif = s[i+1] - s[i];
         cout<<s[i]<<dif<<"";
     }
-   // cout << s[s.size() - 1];
+    cout << s[s.size() - 1];
 }
