@@ -12,7 +12,7 @@ int main(){
         long long product = 1;
         for(int j=0;j<n;j++){
             if(i != j){
-                product *= arr[j];
+                product =product * arr[j];
             }
         }
         output[i] = product;
