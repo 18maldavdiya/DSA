@@ -24,5 +24,5 @@ int main() {
     int result = climbStairs(n);
 
     cout << "Number of ways to climb: " << result << endl;
-
+    return 0;
 }
