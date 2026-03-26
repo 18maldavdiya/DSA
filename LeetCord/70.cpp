@@ -25,4 +25,4 @@ int main() {
 
     cout << "Number of ways to climb: " << result << endl;
     return 0;
-}
+}tt
