@@ -37,7 +37,7 @@ int main() {
     string s = "abciiidef";
     int k = 3;
     
-    cout << obj.maxVowels(s, k) << endl; // Output: 3
+    cout << obj.maxVowels(s, k) << endl; 
     
     return 0;
 }
